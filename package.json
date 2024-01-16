@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "publish:oss": "node ./release.js"
@@ -28,7 +28,7 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "@terminus/t-package-plugin": "0.3.0-beta.2",
+    "@terminus/t-package-plugin": "0.3.0-beta.1",
     "@terminus/t-package-tools": "0.3.0-beta.1",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",

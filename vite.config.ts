@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => {
         namespace: "custom-example", // 命名空间，一个组件库工程项目有且仅有一个唯一的namespace
         development: {
           // 开发调试环境
-          target: "https://portal-dev.app.terminus.io",
+          target: "https://terp-dev.app.terminus.io",
           // 设计器环境
           designer: "https://console-dev.app.terminus.io",
         },
