@@ -10,6 +10,8 @@ import { IBehavior } from "@terminus/t-console-designer-runtime";
 // 注册的命名空间必须和 vite 配置的 namespace 一致
 const registry = createDesignerRegistry("custom-example");
 
+registry.add("TestBC", { key: 'TestBC', name: 'TestBC', type: 'Widget', title: '又一个组件', group: 'layout' })
+
 registry.add(
   "TestComponent", // 组件名称
   {

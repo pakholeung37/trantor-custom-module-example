@@ -5,12 +5,17 @@ console.log("runtime");
 
 const registry = createRuntimeRegistry("custom-example");
 
+registry.component(() => {
+  return <div>TestB</div>
+}, { name: 'TestBC', type: 'Widget'})
+
 registry.component(
-  (props) => {
+  (_props) => {
     return (
       <div>
         {/* <pre>{JSON.stringify(props, null, 2)}</pre> */}
         <div>
+          HIOK
           <ProTable columns={columns} dataSource={defaultDataSource} />
         </div>
       </div>
