@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => {
         "@formily/react": "FormilyReact",
         "@formily/core": "FormilyCore",
         "@tanstack/react-query": "ReactQuery",
-        '@terminus/t-console-designer-runtime': 'TConsoleDesignerRuntime',
+        "@terminus/t-console-designer-runtime": "TConsoleDesignerRuntime",
         "@terminus/t-console-designer-components": "TConsoleDesignerComponents",
       }),
       viteTrantorPlugin({
@@ -50,6 +50,13 @@ export default defineConfig(({ mode }) => {
         },
       },
       minify: false,
+    },
+    css: {
+      preprocessorOptions: {
+        less: {
+          javascriptEnabled: true,
+        },
+      },
     },
   };
 });

@@ -1,5 +1,10 @@
 import { createDesignerRegistry } from "@terminus/t-runtime";
-import { Input, FormItem } from "@terminus/t-console-designer-components";
+import {
+  Input,
+  FormItem,
+  BindService,
+  ModelSelector,
+} from "@terminus/t-console-designer-components";
 import { IBehavior } from "@terminus/t-console-designer-runtime";
 
 // 注册的命名空间必须和 vite 配置的 namespace 一致
@@ -25,6 +30,18 @@ registry.add(
             title: "组件标题",
             "x-decorator": FormItem,
             "x-component": Input,
+          },
+          modelAlias: {
+            type: "string",
+            title: "数据模型",
+            "x-decorator": FormItem,
+            "x-component": ModelSelector,
+          },
+          flow: {
+            type: "object",
+            title: "数据来源",
+            "x-decorator": FormItem,
+            "x-component": BindService,
           },
         },
       },
